@@ -2,9 +2,12 @@
   "name": "single-password",
   "version": "0.0.1",
   "description": "a password management system",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "window": {
+    "frame": false
   },
   "repository": {
     "type": "git",
@@ -17,5 +20,13 @@
   "bugs": {
     "url": "https://github.com/ZheFeng/single-password/issues"
   },
-  "homepage": "https://github.com/ZheFeng/single-password"
+  "homepage": "https://github.com/ZheFeng/single-password",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "time-grunt": "^0.3.2",
+    "load-grunt-tasks": "^0.5.0",
+    "grunt-node-webkit-builder": "^0.1.21",
+    "grunt-contrib-clean": "^0.5.0"
+  }
 }

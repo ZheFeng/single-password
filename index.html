@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello !</title>
+    <script>
+      var path = './';
+      var fs = require('fs');
+
+      fs.watch(path, function() {
+        if (location)
+          location.reload();
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <div id="list"></div>
+    We are using node.js <script>document.write(process.version)</script>.
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        for (attr in $) {
+            $("#list").append("<p>"+attr+"</P>")
+        }
+    </script>
+  </body>
+</html>
